@@ -101,14 +101,6 @@ function isAuthenticated(req, res, next) {
   next();
 }
 
-// Logout route
-// app.post("/logout", (req, res) => {
-//   res.cookie("session", "", {
-//     maxAge: 0,
-//   });
-//   res.json({ message: "Logged out successfully" });
-// });
-
 // Session Blacklisting-based Logout
 //
 app.post("/logout", (req, res) => {
